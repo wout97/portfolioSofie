@@ -10,6 +10,36 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
 
   <style>
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+   justify-content: center;
+  align-items: center;
+  overflow: hidden;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#F5F5F5;
+  font-weight: 800;
+
+}
+
+@media screen and (max-width: 600px) {
+  ul.topnav {display: block;}
+}
+ul.topnav li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  float: left;
+      color:#F5F5F5  ;   text-align: center;
+      text-decoration: none;
+      font-size: 20px;
+}
+
     .body{
       font-family: 'Open Sans Condensed', sans-serif;  }
     
@@ -42,7 +72,7 @@
     }
     
     .content {
-      padding: 16px;
+      padding: 10px;
     }
     
     .sticky {
@@ -79,13 +109,13 @@
       <p>Sofie Deweerdt</p>
       <p>
       
-<div id="navbar" style="z-index: 99999999;color:rgb(226, 189, 206);">
-  <a  href="#ik">Wie ben ik?</a>
-  <a href="#cv">CV</a>
-  <a href="#portfolio">Portfolio</a>
-  <a href="#contact">Contactgegevens</a>
+<ul class="topnav" id="topnav" style="z-index: 99999999;color:rgb(226, 189, 206);">
+  <li><a href="#ik">Wie ben ik?</a></li>
+  <li><a href="#cv">CV</a></li>
+<li><a href="#portfolio">Portfolio</a></li>
+<li><a href="#contact">Contactgegevens</a></li>
 
-</div>
+</ul>
 
     </p>
       <!--  <script>
@@ -203,8 +233,9 @@
             <div class="carousel-inner" role="listbox">
               <div class="item active">
                 <img src="./assets/images/img1.png" class="img-responsive" alt="..." >
+              
                 <div class="carousel-caption" >
-                  <h3 class="h5" style="left:50%">Flyer voor een uitstap</h3>
+                  <h3 class="h5" >Flyer voor een uitstap</h3>
                 </div>
               </div>
               <div class="item">

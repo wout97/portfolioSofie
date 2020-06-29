@@ -3101,6 +3101,9 @@ button.close {
 .carousel-inner img {
     margin: auto;
   }
+.test{
+    margin: auto;
+}
 .carousel-inner {
     overflow: hidden;
     width: 100%}
