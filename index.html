@@ -105,6 +105,75 @@ ul.topnav li a:hover {
     .sticky + .content {
       padding-top: 60px;
     }
+
+
+
+
+    /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 99999999999999; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  padding-bottom: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  overflow: auto;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+  object-fit: cover; 
+  display: block;
+
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+ 
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
     </style>
 
   <!-- Disable tap highlight on IE -->
@@ -241,12 +310,155 @@ ul.topnav li a:hover {
         </div>
         
 
+
+  
    
 
         <div class="card" id="portfolio">
           <div class="card-block">
             <h2 style="color:rgb(248, 199, 169);">Portfolio</h2>
             <p>Als hoofdleiding van speelplein Hampidoe ben ik onder andere verantwoordelijk voor de promotie en communicatie van de speelpleinwerking. Ik heb dan ook al heel wat ervaring opgedaan de afgelopen jaren. Ik communiceer met ouders en externen op Facebook en Instagram, via mail en telefoon. Ik maak daarnaast ook zelf flyers en promotiemateriaal met Canva en ben verantwoordelijk voor onze Wordpress-website. Op deze pagina wil ik graag laten zien wat ik onder andere publiceerde in de zomer van 2019 en in de aanloop van de zomer van 2020. </p>
+          
+            
+            <button id="myBtn" style="margin:20px; background-color: #ffcccc; background-image: none;" type="button" class="btn btn-info btn-lg">Bekijk alles in een overzicht</button>
+
+           
+
+            
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+            
+              <!-- Modal content -->
+              <div class="modal-content" style="background-color: #F5F5F5;">
+                <span class="close">&times;</span>
+                <div class="gallery" >
+                  <a target="_blank" href="./assets/images/img1.png">
+                    <img src="./assets/images/img1.png" alt="Flyer voor een uitstap" width="600" height="420">
+                  </a>
+                  <div class="desc">Flyer voor een uitstap</div>
+                </div>
+                
+                <div class="gallery">
+                  <a target="_blank" href="./assets/images/img2.png">
+                    <img src="./assets/images/img2.png" alt="Flyer voor een activiteit" width="600" height="420">
+                  </a>
+                  <div class="desc">Flyer voor een activiteit</div>
+                </div>
+                
+                <div class="gallery" >
+                  <a target="_blank" href="./assets/images/img4.png">
+                    <img src="./assets/images/img4.png" alt="Flyer ter informatie van de ouders" width="600" height="420">
+                  </a>
+                  <div class="desc">Flyer ter informatie van de ouders</div>
+                </div>
+                
+                <div class="gallery">
+                  <a target="_blank" href="./assets/images/img5.png">
+                    <img src="./assets/images/img5.png" alt="Flyer voor de zwemregeling" width="600" height="420">
+                  </a>
+                  <div class="desc">Flyer voor de zwemregeling</div>
+                </div>
+                
+                <div class="gallery" >
+                  <a target="_blank" href="./assets/images/img9.png">
+                    <img src="./assets/images/img9.png" alt="Flyer voor de zomerplanning" width="600" height="420">
+                  </a>
+                  <div class="desc">Flyer voor de zomerplanning</div>
+                </div>
+                <div class="gallery">
+                  <a target="_blank" href="./assets/images/img10.jpg">
+                    <img src="./assets/images/img10.jpg" alt="Flyer voor een evenement" width="600" height="400">
+                  </a>
+                  <div class="desc">Flyer voor een evenement</div>
+                </div>
+
+                <div class="gallery">
+                  <a target="_blank" href="./assets/images/img11.png">
+                    <img src="./assets/images/img11.png" alt="Omslagfoto op Facebook als weekplanning" width="600" height="400">
+                  </a>
+                  <div class="desc">Flyer als uitleg van een online inschrijfsysteem</div>
+                </div>
+                <div class="gallery" >
+                  <a target="_blank" href="./assets/images/img12.png">
+                    <img src="./assets/images/img12.png" alt="Post op Instagram met info over de Coronamaatregelen" width="600" height="400">
+                  </a>
+                  <div class="desc">Post op Instagram met info over de Coronamaatregelen</div>
+                </div>
+                <div class="gallery">
+                  <a target="_blank" href="./assets/images/img13.png">
+                    <img src="./assets/images/img13.png" alt="Post op Instagram om de zomerwerking aan te kondigen" width="600" height="400">
+                  </a>
+                  <div class="desc">Post op Instagram om de zomerwerking aan te kondigen</div>
+                </div>
+                <div class="gallery">
+                  <a target="_blank" href="./assets/images/img14.png">
+                    <img src="./assets/images/img14.png" alt="Flyer op Facebook met een overzicht van de Coronamaatregelen" width="600" height="400">
+                  </a>
+                  <div class="desc">Flyer op Facebook met een overzicht van de Coronamaatregelen</div>
+                </div>
+                <div class="gallery">
+                  <a target="_blank" href="./assets/images/img15.png">
+                    <img src="./assets/images/img15.png" alt="Flyer op Facebook met een overzicht van de Coronamaatregelen" width="600" height="400">
+                  </a>
+                  <div class="desc">Flyer op Facebook met een overzicht van de Coronamaatregelen</div>
+                </div>
+                <div class="gallery">
+                  <a target="_blank" href="./assets/images/img6.png">
+                    <img src="./assets/images/img6.png" alt="Omslagfoto op Facebook als afsluiter van de zomer" width="600" height="400">
+                  </a>
+                  <div class="desc">Omslagfoto op Facebook als afsluiter van de zomer</div>
+                </div>
+                <div class="gallery">
+                  <a target="_blank" href="./assets/images/img7.png">
+                    <img src="./assets/images/img7.png" alt="Omslagfoto op Facebook met reclame voor een evenement" width="600" height="400">
+                  </a>
+                  <div class="desc">Omslagfoto op Facebook met reclame voor een evenement</div>
+                </div>
+
+                <div class="gallery">
+                  <a target="_blank" href="./assets/images/img8.png">
+                    <img src="./assets/images/img8.png" alt="Omslagfoto op Facebook als weekplanning" width="600" height="400">
+                  </a>
+                  <div class="desc">Omslagfoto op Facebook als weekplanning</div>
+                </div>
+
+
+              </div>
+            
+            </div>
+            
+            <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+            
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+            
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+            
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+              modal.style.display = "block";
+            }
+            
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+            </script>
+            
+           
+
+
+ 
             <div id="carousel-example-generic" class="carousel slide carousel-fade carousel-thumbnails" data-ride="carousel">
 
 
@@ -370,6 +582,8 @@ ul.topnav li a:hover {
             </ol>
 
           </div> <!--carrousel-->
+           <!-- Trigger/Open The Modal -->
+            
           </div><!--card-->
 
         </div> <!--portfolio-->
